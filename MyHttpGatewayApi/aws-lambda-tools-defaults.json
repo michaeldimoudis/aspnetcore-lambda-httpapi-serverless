@@ -1,0 +1,17 @@
+{
+  "Information": [
+    "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+    "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+    "dotnet lambda help",
+    "All the command line options for the Lambda command can be specified in this file."
+  ],
+  "profile": "default",
+  "region": "ap-southeast-2",
+  "configuration": "Release",
+  "framework": "netcoreapp3.1",
+  "s3-prefix": "MyHttpGatewayApi/",
+  "template": "serverless.template",
+  "template-parameters": "\"DomainName\"=\"api.mydomain.com\";\"CertificateArn\"=\"arn:aws:acm:ap-southeast-2:123456789123:certificate/00000000-0000-0000-0000-000000000000\";\"HostedZoneId\"=\"ABCDEFG1234567\"",
+  "s3-bucket": "my-api-deployment-bucket",
+  "stack-name": "MyHttpGatewayApi"
+}

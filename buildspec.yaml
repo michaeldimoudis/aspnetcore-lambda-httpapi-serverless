@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 3.1
+    commands:
+      - export PATH="$PATH:/root/.dotnet/tools"
+      - dotnet tool install -g Amazon.Lambda.Tools
+  build:
+    commands:
+      - dotnet lambda deploy-serverless --project-location ./MyHttpGatewayApi/
