@@ -15,7 +15,7 @@ A Lambda Warmer is also included doing an effective job in forgoing cold starts 
 
 A CodeBuild `buildspec.yaml` file is provided to deploy this out. I recommend choosing the `aws/codebuild/amazonlinux2-x86_64-standard:3.0` environment image, as `PublishReadyToRun` is set to `true` to further improve the performance of the API.
 
-If deploying locally from a Windows PC, set `PublishReadyToRun` to `false` in the `.csproj` file.
+If deploying locally from a Windows PC, set `PublishReadyToRun` to `false` in the `.csproj` file. You must have the .NET Core 3.1 SDK installed, as well as the Amazon.Lambda.Tools `dotnet tool install -g Amazon.Lambda.Tools`.
 
 Blog post at [https://medium.com/@michaeldimoudis/asp-net-core-serverless-web-api-running-in-aws-lambda-using-api-gateway-http-api-a-lambdawarmer-6d31cdd6d3f5](https://medium.com/@michaeldimoudis/asp-net-core-serverless-web-api-running-in-aws-lambda-using-api-gateway-http-api-a-lambdawarmer-6d31cdd6d3f5)
 
